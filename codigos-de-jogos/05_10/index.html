@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clique no alvo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="jogo">
+
+        <header class="topo">
+            <h1>Clique no alvo</h1>
+
+            <div class="placar">
+                <p>Pontos <strong class="pontos">0</strong></p>
+                <p>Tempo <strong class="tempo">30</strong></p>
+                <p>Recorde <strong class="recorde">0</strong></p>
+            </div>
+        </header>
+
+        <div class="arena">
+            <button type="button" class="alvo escondido" aria-label="Alvo"></button>
+        </div>
+
+        <button type="button" class="botao-comecar">Começar</button>
+        <p class="mensagem">Acerte o máximo de alvos em 30 segundos.</p>
+
+        <div class="controles-nivel">
+            <label for="campo-nivel">Nível:</label>
+            <select id="campo-nivel" class="campo-nivel"></select>
+        </div>
+
+        <!-- Painel de Regras do Jogo -->
+        <section class="instrucoes">
+            <h2>Como Jogar & Regras</h2>
+            <ul>
+                <li>🎯 <strong>Alvo Normal (Vermelho):</strong> Vale <strong>+1 ponto</strong>.</li>
+                <li>⭐ <strong>Alvo Dourado:</strong> Vale <strong>+3 pontos</strong> (aparições limitadas por nível).</li>
+                <li>💣 <strong>Bomba (Preto):</strong> Subtrai <strong>-5 pontos</strong> (aparições limitadas por nível).</li>
+                <li>⚡ <strong>Aumento de Velocidade:</strong> A cada 10 pontos, o alvo se move mais rápido!</li>
+                <li>⚠️ <strong>Nível Difícil:</strong> Clicar na arena fora do alvo perde <strong>1 ponto</strong>.</li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
